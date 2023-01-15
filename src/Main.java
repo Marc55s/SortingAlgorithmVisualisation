@@ -11,7 +11,7 @@ public class Main implements Runnable {
         gamePanel = new GamePanel();
         frame.add(gamePanel);
         frame.pack();
-        frame.setResizable(false);
+        frame.setResizable(true);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
@@ -29,7 +29,7 @@ public class Main implements Runnable {
 
     @Override
     public void run() {
-        double FPS = 30;
+        double FPS = 10;
         double frames = 0;
         double timer = 0;
         double drawInterval = 1_000_000_000 / FPS;
